@@ -263,15 +263,16 @@ app.use(cors());
 
 let links = [{ url: 'linkedin.com', type: 'both', checked: [false] }];
 
-app.get('/comments', (req, res) => {
+app.get('', (req, res) => {
   try {
-    res.download('././RESULTS.CSV', file, function (err) {
-      if (err) {
-        console.log(err);
-      } else {
-        // decrement a download credit, etc.
-      }
-    });
+    // res.download('././RESULTS.CSV', file, function (err) {
+    //   if (err) {
+    //     console.log(err);
+    //   } else {
+    //     // decrement a download credit, etc.
+    //   }
+    // });
+    res.send('hello');
   } catch (e) {
     console.log(e);
   }
@@ -294,7 +295,7 @@ const writeToCsv = (comntscsv, reactionscsv, i) => {
   }
   fs.appendFileSync(file, '\n');
 };
-app.put('/comments', async (req, res) => {
+app.put('', async (req, res) => {
   links[0] = req.body;
   console.log('message received');
   const { browser, page } = await startBrowser();
