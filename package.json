@@ -1,0 +1,32 @@
+{
+  "name": "crawler",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node scraper.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "chai": "^4.3.6",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "exceljs": "^4.3.0",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "mocha": "^10.0.0",
+    "node-fetch": "^3.2.6",
+    "nodemon": "^2.0.19",
+    "puppeteer": "^15.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "write-excel-file": "^1.4.9",
+    "xlsx": "^0.18.5"
+  },
+  "main": "scraper.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
